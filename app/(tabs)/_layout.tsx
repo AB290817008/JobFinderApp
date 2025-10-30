@@ -66,6 +66,14 @@ export default function TabsLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="job-details"
+        options={{
+          title: "Job Details",
+          tabBarButton: () => null, // hides it from bottom tab bar
+          tabBarStyle: { display: "none" },
+        }}
+      />
     </Tabs>
   );
 }
